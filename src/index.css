@@ -1,13 +1,110 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+}
+html {
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20px;
+}
+body {
+  width: auto;
+  height: auto;
+}
+/* navbar */
+.myNab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(54, 156, 246);
+  font-size: 1.2rem;
+  color: white;
+  letter-spacing: -1px;
+  box-shadow: 2px 2px 8px 2px rgba(130, 130, 130, 0.447);
+}
+.myNab > i {
+  font-size: 1.9rem;
+  padding-right: .2rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Card */
+.image-content {
+  width: 650px;
+  height: 430px;
+  border-radius: 1.5rem;
+}
+.grid-wrapper {
+  padding-left: 1.4rem;
+}
+.Hero {
+  padding: 0 3.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+.grid-wrapper > i {
+  margin-right: 4px;
+}
+.text-alignment {
+  display: flex;
+  align-items: center;
+}
+.text-alignment > i {
+  color: rgb(54, 156, 246);
+  font-size: 2rem;
+  margin-right: 10px;
+}
+.location-title {
+  margin-right: 1.1rem;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.map-title {
+  color: rgb(155, 155, 155);
+  cursor: pointer;
+}
+/* card second content */
+.grid-wrapper > h1 {
+  font-family: sans-serif;
+  font-size: 2.5rem;
+  margin-top: .4rem;
+  margin-bottom: 1rem;
+  color: rgb(23, 24, 38);
+}
+/* Date and Content */
+.grid-wrapper > .start-date {
+  font-weight: 700;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  color: rgb(23, 24, 38);
+}
+.grid-wrapper > .end-date {
+  font-weight: 700;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  color: rgb(23, 24, 38);
+}
+.grid-wrapper > .dash-date {
+  font-weight: 700;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  color: rgb(23, 24, 38);
+}
+/* title content */
+.location-content {
+  margin-top: 1.4rem;
+  font-size: 1.2rem;
+  font-weight: 200;
+  color: #2B283A;
+}
+/* cards => all container that HOLDS => from APP */
+.card-rows {
+  padding: 2rem;
+  margin-top: 3rem;
 }
